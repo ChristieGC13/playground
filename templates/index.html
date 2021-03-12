@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #container {
+        padding: 20px;
+    }
+    h1 {
+        margin: 30px 400px;
+    }
+    #squares_space {
+        display: flex;
+        justify-content:space-evenly ; 
+        margin: 10px;
+    }
+    .squares {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(154, 188, 247);
+        border: 5px solid black;
+    }
+        </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome!</h1>
+        <div id="squares_space">
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #container {
+        padding: 20px;
+    }
+    h1 {
+        margin: 30px 400px;
+    }
+    #squares_space {
+        margin: 10px;
+    }
+    .squares {
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+        background-color:{{color}};
+        border: 5px solid black;
+        display: inline-block;
+    }
+        </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome!</h1>
+        <div id="squares_space">
+            {% for x in range(0,times): %}
+                <div class="squares"></div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
